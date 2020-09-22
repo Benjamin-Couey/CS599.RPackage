@@ -1,10 +1,17 @@
-# Description - Performs basic hierarchical clustering using single linkage.
-#               Computes it's own distance matrix.
-# Arguments - data.matrix : a numeric data matrix to perform clustering on
-#             K : the number of clusters
-# Returns - a vector with as many elements as data.matrix has rows where each
-#           element indicate which cluster the row at that index in the
-#           data.matrix is assigned
+#' Perform basic heirarchical clustering on a data matrix using single linkage.
+#'
+#' This function computes its own distance matrix.
+#'
+#' @param data.matrix A numeric data matrix to perform clustering on
+#' @param K The number of clusters
+#'
+#' @return A vector with as many elements as data.matrix has rows where each
+#'           element indicate which cluster the row at that index in the
+#'           data.matrix is assigned, with there being K different clusters
+#'           represented in the vector
+#' @export
+#'
+#' @examples
 HCLUST <- function( data.matrix, K ){
 
   diss.matrix <- matrix( nrow=nrow( data.matrix ), ncol=nrow( data.matrix ) )

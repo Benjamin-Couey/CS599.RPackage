@@ -1,15 +1,18 @@
 Package: CS599.RPackage
-Title: What the Package Does (One Line, Title Case)
+Title: Run basic clustering algorithms
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Benjamin",
+           family = "Couey",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "bhc36@nau.edu")
+Description: As a project for CS599 Unsupervised Learning, I built this package
+             of simple clustering algorithms. These algoirthms will help you
+             gain insight into a data set by sorting the data into a
+             pre-determined number of clusters. Note, while these algorithms work,
+             they are more limited in options and less efficient than those
+             algoirthms found in other, more proffessional packages.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

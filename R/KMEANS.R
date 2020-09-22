@@ -1,16 +1,21 @@
-# Description - Performs basic k-means clustering on a data matrix
-# Arguments - data.matrix : a numeric data matrix to perform clustering on
-#             K : the number of clusters
-# Returns - a list which has the following elements
-#             cluster: a vector of integers (from 1 to k) indicating the cluster
-#                      to which each row of the data matrix is associated
-#             centers: a matrix of K cluster centers
-#             withinss: a vector of the within-cluster sum squares for each
-#                       cluster
-#             tot.withinss: the sum of withinss for all clusters
-#             size: a vector of integers indicating the number of points
-#                   associated with each cluster
-#             iter: the number of outer iterations the function took to converge
+#' Perform basic k-means clustering on a data matrix
+#'
+#' @param data.matrix A numeric data matrix to perform clustering on
+#' @param K The number of clusters
+#'
+#' @return A list which has the following elements
+#' cluster: a vector of integers (from 1 to k) indicating the cluster
+#'                      to which each row of the data matrix is associated
+#'             centers: a matrix of K cluster centers
+#'             withinss: a vector of the within-cluster sum squares for each
+#'                       cluster
+#'             tot.withinss: the sum of withinss for all clusters
+#'             size: a vector of integers indicating the number of points
+#'                   associated with each cluster
+#'             iter: the number of outer iterations the function took to converge
+#' @export
+#'
+#' @examples
 KMEANS <- function( data.matrix, K ){
 
   # Initialize K clustering centers
