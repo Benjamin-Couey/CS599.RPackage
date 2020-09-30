@@ -14,6 +14,8 @@
 #'                   associated with each cluster.
 #'             iter: The number of outer iterations the function took to converge.
 #'
+#' @export
+#'
 #' @examples
 #' test.matrix <- as.matrix( iris[ 1:50, 1:4 ] )
 #' kmeans.result <- KMEANS( test.matrix, 4 )

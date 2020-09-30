@@ -10,6 +10,8 @@
 #'           data.matrix is assigned, with there being K different clusters
 #'           represented in the vector.
 #'
+#' @export
+#'
 #' @examples
 #' test.matrix <- as.matrix( iris[ 1:50, 1:4 ] )
 #' HCLUST( test.matrix, 4 )
