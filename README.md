@@ -17,7 +17,7 @@ less efficient than implementations found in other packages such as stats.
 This package can be installed from GitHub with the following R command.
 
 ```
-remotes::install_github(Benjamin-Couey/CS599.RPackage”)
+remotes::install_github("Benjamin-Couey/CS599.RPackage”)
 ```
 
 # Usage
