@@ -7,16 +7,20 @@
 HCLUST(data.matrix, K)
 }
 \arguments{
-\item{data.matrix}{A numeric data matrix to perform clustering on}
+\item{data.matrix}{A numeric data matrix to perform clustering on.}
 
-\item{K}{The number of clusters}
+\item{K}{The number of clusters.}
 }
 \value{
 A vector with as many elements as data.matrix has rows where each
 element indicate which cluster the row at that index in the
 data.matrix is assigned, with there being K different clusters
-represented in the vector
+represented in the vector.
 }
 \description{
 This function computes its own distance matrix.
+}
+\examples{
+test.matrix <- as.matrix( iris[ 1:50, 1:4 ] )
+HCLUST( test.matrix, 4 )
 }

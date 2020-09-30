@@ -2,16 +2,17 @@
 #'
 #' This function computes its own distance matrix.
 #'
-#' @param data.matrix A numeric data matrix to perform clustering on
-#' @param K The number of clusters
+#' @param data.matrix A numeric data matrix to perform clustering on.
+#' @param K The number of clusters.
 #'
 #' @return A vector with as many elements as data.matrix has rows where each
 #'           element indicate which cluster the row at that index in the
 #'           data.matrix is assigned, with there being K different clusters
-#'           represented in the vector
-#' @export
+#'           represented in the vector.
 #'
 #' @examples
+#' test.matrix <- as.matrix( iris[ 1:50, 1:4 ] )
+#' HCLUST( test.matrix, 4 )
 HCLUST <- function( data.matrix, K ){
 
   diss.matrix <- matrix( nrow=nrow( data.matrix ), ncol=nrow( data.matrix ) )

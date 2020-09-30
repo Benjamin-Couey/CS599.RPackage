@@ -7,22 +7,28 @@
 KMEANS(data.matrix, K)
 }
 \arguments{
-\item{data.matrix}{A numeric data matrix to perform clustering on}
+\item{data.matrix}{A numeric data matrix to perform clustering on.}
 
-\item{K}{The number of clusters}
+\item{K}{The number of clusters.}
 }
 \value{
-A list which has the following elements
-cluster: a vector of integers (from 1 to k) indicating the cluster
-to which each row of the data matrix is associated
-centers: a matrix of K cluster centers
-withinss: a vector of the within-cluster sum squares for each
-cluster
-tot.withinss: the sum of withinss for all clusters
-size: a vector of integers indicating the number of points
-associated with each cluster
-iter: the number of outer iterations the function took to converge
+A list which has the following elements:
+cluster: A vector of integers (from 1 to k) indicating the cluster
+to which each row of the data matrix is associated.
+centers: A matrix of K cluster centers.
+withinss: A vector of the within-cluster sum squares for each
+cluster.
+tot.withinss: the sum of withinss for all clusters.
+size: A vector of integers indicating the number of points
+associated with each cluster.
+iter: The number of outer iterations the function took to converge.
 }
 \description{
 Perform basic k-means clustering on a data matrix
+}
+\examples{
+test.matrix <- as.matrix( iris[ 1:50, 1:4 ] )
+kmeans.result <- KMEANS( test.matrix, 4 )
+kmeans.result$cluster
+kmeans.result$centers
 }
