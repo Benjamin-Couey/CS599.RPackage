@@ -1,4 +1,4 @@
-# CS599-RPackage
+# CS599.RPackage
 
 <!-- badges: start -->
   [![Build Status](https://travis-ci.org/Benjamin-Couey/CS599.RPackage.svg?branch=master)](https://travis-ci.org/Benjamin-Couey/CS599.RPackage)
